@@ -1,0 +1,187 @@
+.Image-Perfil { /*align, center */ /*alinear, centar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30;
+    background-color: #fff;
+    margin: 0 auto;
+    max-width: 1024px;
+    border-bottom: 1px solid blue;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif; /*text font*/ /*tipo de letra del texto*/
+    margin: 0; /*remove default images from browser*/ /*elimina imagenes predeterminadas del navegador*/
+    padding: 0; /*remove unnecessary or default padding*/ /*elimina rellenos innecesarops o predeterminados*/
+    background-color: white; /* bottom background color */ /* color de fondo inferior*/
+    color: #333; /*top main text color*/ /*color de texto principal superior*/
+    line-height: 1.5; /*space between lines*/ /*espacio entre líneas*/
+}
+nav {
+    text-align: center;
+    color: #333;
+        
+}
+nav a{
+    margin: 0 20px ;
+}
+
+/*header styles*/
+/*estilos de encabezado*/
+header { /*top and bottom alignment and fill color*/ /*alineación y color de relleno superior e inferior*/
+    background-color: #333; /* background color */ /* color de fondo*/
+    color: #fff; /*text color*/ /*color de texto*/
+    padding: 1.5rem; /*text size*/ /*tamaño texto*/
+    text-align: center; /*center text*/ /*centrar texto*/
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em; /*font size for title*/ /*tamaña fuente para el titulo*/
+}
+
+head p {
+    font-size: 1.2
+}
+
+ /*section style*/ /*estilo secciones*/
+section {
+    padding: 40px 30px;/*more padding for large screens*/ /*más relleno para pantallas grandes*/
+    margin: 0 auto;/*center section*/ /*centrar sección*/
+    max-width: 1024px;  /*limit for your screen extension*/ /*límite para su extención en pantalla*/
+    background-color: #fff;/*background color for sections (white)*/ /*color de fondo para secciones (blanco)*/
+    border-bottom: 1px solid blue; /*línea divisora suave*/ /*soft dividing line*/
+}
+
+section:last-of-type {
+    border-bottom: none; /*the last section does not need a line*/ /*la ultima sección no necesita línea */
+}
+
+h2 { /* alignment, color and font size for subtitles */ /* alineación, color y tamaño de letra para subtitulos*/
+    color: black; /*subtitle color*/ /*color de subtitulo*/
+    text-align: center ; /*align subtitles*/ /*alinear subtitulos*/
+    margin-bottom: 30px; /*space below the subtitle*/ /*espacio debajo del subtitulo*/
+    font-size: 2.1em; /* subtitle size */ /* tamaño del subtitulo*/
+}
+
+/*link styles*/
+/*estilos de los enlaces*/
+a {
+    color: blue;
+    text-decoration: none;/*without permanent underlining*/ /*sin subrayar permanentemente*/
+    
+}
+a:hover {
+    text-decoration: underline; /*underline on hover*/ /*subrayar al pasar el cursor*/
+    color: yellowgreen;
+    
+}
+
+/*project styles*/
+/*estilos de los proyectos*/
+.Projects {
+    background-color: #eee; /*card color */ /*color de la tarjeta */
+    border: 1px solid #ddd; /* card border */ /* borde de la tarjeta */
+    padding: 25px;  /*card fill */ /*relleno de la tarjeta */
+    margin-bottom: 25px;  /*space between projects*/ /*espacio ente proyectos*/
+    border-radius: 50px;  /*round corners*/ /*esquinas redondas*/
+    box-shadow: 0 10px 15px rgb(0,0,0,0.1);  /* shadows for effect */ /* sombras para efecto*/
+} 
+.Projects h3 {  /*here is to set color and size to the project titles*/ /*aquí es para poner color, tamaño a los titulos del proyecto*/
+    color: rgb(78, 78, 230);
+    margin-top: 0;
+    font-size: 2.0em;
+}
+
+ /*estilos el pie de página*/ /*styles the footer*/
+footer {
+    text-align: center;
+    padding: 25px;
+    background-color: #333 ;
+    color: #fff;
+    font-size: 1em;
+}
+
+/*media Queries(this is where it becomes responsive)*/
+/*media Queries(aquí es dónde se hace responsivo)*/ 
+@media (max-with: 1024px) {/*Desk*/ /*Escritorio*/
+    header h1 {
+        font-size: 2.5em;
+    }
+    header p {
+        font-size: 1.1em;
+    }
+    section {
+        padding: 30px 25px; /*adjust padding*/ /*ajustar releno*/
+        margin: 0 15px;  /*reduce side margins*/ /*reducir margenes laterales*/
+
+    }
+    h2 {
+        font-size: 2em;
+    }
+    .Projects {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .Projects h3 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-with: 768px) { /*Tablets*/
+    header h1 {
+        font-size: 2.2em;
+    }
+    header p {
+        font-size: 1.1em;
+    }
+    section {
+        padding: 25px 20px;  
+        margin: 0 10px;  /*reducir au másmargenes laterales*/ /*reduce side margins to a minimum*/
+
+    }
+    h2 {
+        font-size: 1.8em;
+    }
+    .Projects {
+        padding: 18px;
+        margin-bottom: 18px;
+    }
+    .Projects h3 {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-with: 480px ) { /*Móvil*/ /*Mobile*/
+    header {
+        padding: 1.5rem 0; /*texto más pequeño para el nombre*/ /*smaller text for name*/
+    }
+    header h1 {
+        font-size: 2em;
+    }
+    header p {
+        font-size: 0.9em;
+    }
+    section {
+        padding: 20px 15px;  /*relleno minimo*/ /*minimum padding*/
+        margin: 0 8px;       /*margenes pequeños */ /*small margins */
+
+    }
+    h2 {
+        font-size: 1.6em; /*titulos sección más pequeños*/ /*smaller section titles*/
+        margin: 0 8px; /**/
+    }
+    .Projects {
+        padding: 15px;
+        margin-bottom: 15px;
+        box-shadow: none; /*eliminar sombra para diseño más limpio en el telefono*/ /*Remove shadows for a cleaner phone design*/
+    }
+    .Projects h3 {
+        font-size: 1.2em;
+    }
+    footer {
+        padding: 20px;
+        font-size: 0.8em;
+    }
+}
